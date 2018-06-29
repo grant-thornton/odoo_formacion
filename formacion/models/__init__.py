@@ -1,3 +1,4 @@
-# -*- coding: utf-8 -*-
-from . import model
-from . import partner
+  # -*- coding: utf-8 -*-
+  from . import models
+  from . import partner
+  from . import wizard

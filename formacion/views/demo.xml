@@ -1,0 +1,18 @@
+<odoo>
+
+    <record model="openacademy.course" id="course_Nivel_0">
+        <field name="name">Curso Nivel 0</field>
+        <field name="description">Descripción Curso Nivel 0 </field>
+    </record>
+
+    <record model="openacademy.course" id="course_Nivel_1">
+        <field name="name">Curso Nivel 1</field>
+        <field name="description">Descripción Curso Nivel 1 </field>
+    </record>
+
+    <record model="openacademy.course" id="course_Nivel_2">
+        <field name="name">Curso Nivel 2</field>
+        <field name="description">Descripción Curso Nivel 2 </field>
+    </record>
+
+</odoo>

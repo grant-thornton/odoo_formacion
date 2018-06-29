@@ -1,11 +1,12 @@
-# -*- coding: utf-8 -*-
-
-from datetime import timedelta
+1# -*- coding: utf-8 -*-
 from odoo import models, fields, api, exceptions
+from datetime import timedelta
+
 
 class Course(models.Models):
+    _name = 'openacademy.course'
     name = fields.Char(string="Title", required=True)
-        description = fields.Text()
+    description = fields.Text()
 
     responsible_id = fields.Many2one(
         'res.users',
@@ -29,14 +30,13 @@ class Course(models.Models):
         default['name'] = new_name
         return super(Course, self).copy(default)
 
-        _sql_constraints = [
+    _sql_constraints = [
         ('name_description_check',
-         'CHECK(name != description)',
-         "The title of the course should not be the description"),
-
+            'CHECK(name != description)',
+            "The title of the course should not be the description"),
         ('name_unique',
-         'UNIQUE(name)',
-         "The course title must be unique"),]
+            'UNIQUE(name)',
+            "The course title must be unique")]
 
 
 class Session(models.Model):
@@ -48,27 +48,27 @@ class Session(models.Model):
     active = fields.Boolean(default=True)
     color = fields.Integer()
 
+    instructor_id = fields.Many2one(
+        'res.partner', string="Instructor",
+        domain=['|', ('instructor', '=', True),
+                ('category_id.name', 'ilike', "Teacher")])
+    course_id = fields.Many2one(
+        'openacademy.course',
+        ondelete='cascade', string="Course", required=True)
+    attendee_ids = fields.Many2many('res.partner', string="Attendees")
 
-
-    instructor_id = fields.Many2one('res.partner', string="Instructor",
-            domain=['|', ('instructor', '=', True),
-                     ('category_id.name', 'ilike', "Teacher")])
-        course_id = fields.Many2one('openacademy.course',
-            ondelete='cascade',string="Course", required=True
-        attendee_ids = fields.Many2many('res.partner', string="Attendees")
-
-    taken_seats = fields.Float
-        (string="Taken seats", compute='_taken_seats')
-        end_date = fields.Date(string="End Date", store=True,
-             compute='_get_end_date', inverse='_set_end_date')
-        hours = fields.Float(string="Duration in hours",
-             compute='_get_hours', inverse='_set_hours')
-
-        attendees_count = fields.Integer(
-             string="Attendees count",
-             compute='_get_attendees_count',
-             store=True)
-
+    taken_seats = fields.Float(
+        string="Taken seats", compute='_taken_seats')
+    end_date = fields.Date(
+        string="End Date", store=True,
+        compute='_get_end_date', inverse='_set_end_date')
+    hours = fields.Float(
+        string="Duration in hours",
+        compute='_get_hours', inverse='_set_hours')
+    attendees_count = fields.Integer(
+        string="Attendees count",
+        compute='_get_attendees_count',
+        store=True)
 
     @api.depends('seats', 'attendee_ids')
     def _taken_seats(self):
@@ -84,7 +84,8 @@ class Session(models.Model):
             return {
                 'warning': {
                     'title': "Incorrect 'seats' value",
-                    'message': "The number of available seats may not be negative",
+                    'message': "The number of available seats may not be "
+                    "negative",
                 },
             }
         if self.seats < len(self.attendee_ids):
@@ -113,7 +114,8 @@ class Session(models.Model):
             if not (r.start_date and r.end_date):
                 continue
 
-            # Compute the difference between dates, but: Friday - Monday = 4 days,
+            # Compute the difference between dates, but:
+            # Friday - Monday = 4 days,
             # so add one day to get 5 days instead
             start_date = fields.Datetime.from_string(r.start_date)
             end_date = fields.Datetime.from_string(r.end_date)
@@ -137,4 +139,5 @@ class Session(models.Model):
     def _check_instructor_not_in_attendees(self):
         for r in self:
             if r.instructor_id and r.instructor_id in r.attendee_ids:
-                raise exceptions.ValidationError("A session's instructor can't be an attendee")
+                raise exceptions.ValidationError(
+                    "A session's instructor can't be an attendee")

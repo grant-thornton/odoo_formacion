@@ -23,7 +23,7 @@
     'depends': ['base', 'report', 'board'],
 
     # always loaded
-   'data': [
+    'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
         'templates.xml',

@@ -1,11 +1,12 @@
 1# -*- coding: utf-8 -*-
-from odoo import models, fields, api, exceptions
 from datetime import timedelta
+from odoo import models, fields, api, exceptions
 
 
 class Session(models.Model):
     _name = 'openacademy.session'
 
+    name = fields.Char(string="Title", required=True)
     start_date = fields.Date(default=fields.Date.today)
     duration = fields.Float(digits=(6, 2), help="Duration in days")
     seats = fields.Integer(string="Number of seats")

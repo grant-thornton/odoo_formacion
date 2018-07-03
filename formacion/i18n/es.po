@@ -1,0 +1,373 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * formacion
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-03 12:52+0000\n"
+"PO-Revision-Date: 2018-07-03 12:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.view_openacad_session_kanban
+msgid "<br/>\n"
+"                                    Start date:"
+msgstr "<br/>\n"
+"                                    Start date:"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.view_openacad_session_kanban
+msgid "<br/>\n"
+"                                    duration:"
+msgstr "<br/>\n"
+"                                    duration:"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.launch_session_wizard
+#: model:ir.ui.view,arch_db:formacion.session_form_view
+msgid "Add Attendees"
+msgstr "Add Attendees"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_res_partner_session_ids
+#: model:ir.model.fields,field_description:formacion.field_res_users_session_ids
+msgid "Attended Sessions"
+msgstr "Attended Sessions"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_attendee_ids
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_attendee_ids
+msgid "Attendees"
+msgstr "Asistentes"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.act_session_graph
+#: model:ir.ui.view,arch_db:formacion.board_session_form
+msgid "Attendees by course"
+msgstr "Attendees by course"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_attendees_count
+msgid "Attendees count"
+msgstr "Attendees count"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.report_session_view
+msgid "Attendees:"
+msgstr "Attendees:"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.session_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_color
+msgid "Color"
+msgstr "Color"
+
+#. module: formacion
+#: model:ir.ui.menu,name:formacion.configuration_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.contact_cat_list_action
+#: model:ir.ui.menu,name:formacion.contact_cat_menu
+msgid "Contact Tags"
+msgstr "Etiquetas de contacto"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.contact_list_action
+#: model:ir.ui.menu,name:formacion.contact_menu
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_course_id
+msgid "Course"
+msgstr "Course"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.course_form_view
+msgid "Course Form"
+msgstr "Course Form"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.course_tree_view
+msgid "Course Tree"
+msgstr "Course Tree"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.act_course_list
+#: model:ir.actions.act_window,name:formacion.course_list_action
+#: model:ir.ui.menu,name:formacion.courses_menu
+#: model:ir.ui.view,arch_db:formacion.board_session_form
+msgid "Courses"
+msgstr "Courses"
+
+#. module: formacion
+#: model:ir.actions.act_window,help:formacion.course_list_action
+msgid "Create the first course"
+msgstr "Create the first course"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_create_uid
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_create_uid
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_create_date
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_create_date
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.view_openacad_session_kanban
+msgid "Delete"
+msgstr "Suprimir"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_description
+#: model:ir.ui.view,arch_db:formacion.course_form_view
+msgid "Description"
+msgstr "Descripción"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_display_name
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_display_name
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_duration
+msgid "Duration"
+msgstr "Duración"
+
+#. module: formacion
+#: model:ir.model.fields,help:formacion.field_openacademy_session_duration
+msgid "Duration in days"
+msgstr "Duration in days"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_hours
+msgid "Duration in hours"
+msgstr "Duration in hours"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_end_date
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.report_session_view
+msgid "From"
+msgstr "From"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.course_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_id
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_id
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_instructor_id
+#: model:ir.model.fields,field_description:formacion.field_res_partner_instructor
+#: model:ir.model.fields,field_description:formacion.field_res_users_instructor
+msgid "Instructor"
+msgstr "Instructor"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course___last_update
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session___last_update
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_write_uid
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_write_uid
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_write_date
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_write_date
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.course_search_view
+msgid "My Courses"
+msgstr "My Courses"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_seats
+msgid "Number of seats"
+msgstr "Number of seats"
+
+#. module: formacion
+#: model:ir.ui.menu,name:formacion.main_openacademy_menu
+#: model:ir.ui.menu,name:formacion.openacademy_menu
+msgid "Open Academy"
+msgstr "Open Academy"
+
+#. module: formacion
+#: model:res.groups,name:formacion.group_manager
+msgid "OpenAcademy / Manager"
+msgstr "OpenAcademy / Manager"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.openacademy_session_graph_view
+msgid "Participations by Courses"
+msgstr "Participations by Courses"
+
+#. module: formacion
+#: model:ir.model,name:formacion.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.course_form_view
+msgid "Registered sessions"
+msgstr "Registered sessions"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_responsible_id
+#: model:ir.ui.view,arch_db:formacion.course_search_view
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.session_calendar_view
+msgid "Session Calendar"
+msgstr "Session Calendario"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.open_board_session
+#: model:ir.ui.menu,name:formacion.menu_board_session
+#: model:ir.ui.view,arch_db:formacion.board_session_form
+msgid "Session Dashboard"
+msgstr "Session Pizarra"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.session_gantt_view
+msgid "Session Gantt"
+msgstr "Session Gantt"
+
+#. module: formacion
+#: model:ir.actions.report.xml,name:formacion.report_session
+msgid "Session Report"
+msgstr "Session Informe"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.session_tree_view
+msgid "Session Tree"
+msgstr "Session Tree"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.view_openacad_session_kanban
+msgid "Session name:"
+msgstr "Nombre Session:"
+
+#. module: formacion
+#: model:ir.actions.act_window,name:formacion.act_session_calendar
+#: model:ir.actions.act_window,name:formacion.session_list_action
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_session_ids
+#: model:ir.model.fields,field_description:formacion.field_openacademy_wizard_session_ids
+#: model:ir.ui.menu,name:formacion.session_menu
+#: model:ir.ui.view,arch_db:formacion.board_session_form
+#: model:ir.ui.view,arch_db:formacion.course_form_view
+#: model:ir.ui.view,arch_db:formacion.partner_instructor_form_view
+msgid "Sessions"
+msgstr "Sessiones"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_start_date
+msgid "Start date"
+msgstr "Inicio"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.session_form_view
+msgid "Subscribe"
+msgstr "Subcripción"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_taken_seats
+msgid "Taken seats"
+msgstr "Asientos Ocupados"
+
+#. module: formacion
+#: model:res.partner.category,name:formacion.teacher1
+msgid "Teacher / Level 1"
+msgstr "Profesor / Nivel 1"
+
+#. module: formacion
+#: model:res.partner.category,name:formacion.teacher2
+msgid "Teacher / Level 2"
+msgstr "Profesor / Nivel 2"
+
+#. module: formacion
+#: sql_constraint:openacademy.course:0
+msgid "The course title must be unique"
+msgstr "El título del curso debe ser único"
+
+#. module: formacion
+#: sql_constraint:openacademy.course:0
+msgid "The title of the course should not be the description"
+msgstr "El título del curso no debe ser la descripción"
+
+#. module: formacion
+#: model:ir.model.fields,field_description:formacion.field_openacademy_course_name
+#: model:ir.model.fields,field_description:formacion.field_openacademy_session_name
+msgid "Title"
+msgstr "Título"
+
+#. module: formacion
+#: model:ir.model,name:formacion.model_openacademy_course
+msgid "openacademy.course"
+msgstr "openacademy.course"
+
+#. module: formacion
+#: model:ir.model,name:formacion.model_openacademy_session
+msgid "openacademy.session"
+msgstr "openacademy.session"
+
+#. module: formacion
+#: model:ir.model,name:formacion.model_openacademy_wizard
+msgid "openacademy.wizard"
+msgstr "openacademy.wizard"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.session_form_view
+msgid "or"
+msgstr "o"
+
+#. module: formacion
+#: model:ir.ui.view,arch_db:formacion.report_session_view
+msgid "to"
+msgstr "a"

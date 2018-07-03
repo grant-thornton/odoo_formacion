@@ -11,8 +11,8 @@
             - attendees registration
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    "author": "Grant Thornton S.L.P.",
+    "website": 'http://www.grantthornton.es/',
 
     # Categories can be used to filter modules in modules listing
     # for the full list
@@ -26,14 +26,14 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
-        'templates.xml',
         'views/openacademy.xml',
         'views/partner.xml',
-        'reports.xml',
+        'views/reports.xml',
         'views/session_board.xml',
+        'wizard/openacademy_wizard_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo.xml',
+        'views/demo.xml',
     ],
 }
